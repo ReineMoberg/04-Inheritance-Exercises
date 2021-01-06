@@ -24,12 +24,18 @@ public class App
         //Exercise 2
 
         //Exercise 3
-        IceCream iceCream = new IceCream();
+        /*IceCream iceCream = new IceCream();
         iceCream.description();
         Chocolate chocolate = new Chocolate();
         chocolate.description();
         Vanilla vanilla = new Vanilla();
-        vanilla.description();
+        vanilla.description();*/
 
+        //Exercise 4
+        CarBase car1 = new CarBase("Volvo");
+        CarEx4 car2 = new CarEx4("Saab");
+        car2.colour("White");
+        CarColour car3 = new CarEx4("Ford");
+        car3.colour("Blue");
     }
 }
