@@ -1,8 +1,6 @@
 package se.lexicon.ReineMoberg;
 
-import se.lexicon.ReineMoberg.model.Car;
-import se.lexicon.ReineMoberg.model.Motorcycle;
-import se.lexicon.ReineMoberg.model.Truck;
+import se.lexicon.ReineMoberg.model.*;
 
 /**
  * Hello world!
@@ -13,7 +11,7 @@ public class App
     public static void main( String[] args ) {
 
         //Exercise 1
-        Car car1 = new Car(20000,"Volvo","Red","CAR 123",
+        /*Car car1 = new Car(20000,"Volvo","Red","CAR 123",
                 120,"Hatchback");
         Motorcycle mc1 = new Motorcycle(5000,"Ducati","Red","MC 123",
                 130,"Racing");
@@ -21,7 +19,17 @@ public class App
                 350,"Flatbed");
         car1.drive();
         mc1.drive();
-        truck1.drive();
+        truck1.drive();*/
+
+        //Exercise 2
+
+        //Exercise 3
+        IceCream iceCream = new IceCream();
+        iceCream.description();
+        Chocolate chocolate = new Chocolate();
+        chocolate.description();
+        Vanilla vanilla = new Vanilla();
+        vanilla.description();
 
     }
 }
