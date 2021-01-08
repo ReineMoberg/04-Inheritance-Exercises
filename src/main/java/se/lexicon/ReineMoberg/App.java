@@ -32,9 +32,24 @@ public class App
         vanilla.description();*/
 
         //Exercise 4
+
+        //Prints "This is Volvo"
         CarBase car1 = new CarBase("Volvo");
+        //car1.colour("Brown")      //Does not work. CarBase is parent class
+
+        //Prints "This is Saab"
+        //"The colour of the car is: White"
+        //"This is default message"
+        //"This is static method"
         CarEx4 car2 = new CarEx4("Saab");
         car2.colour("White");
+        car2.defaultMethod();
+        //car2.staticMethod();   //Does not work. Can't call interface static method with object name
+        CarColour.staticMethod();
+
+        //Prints "This is Ford"
+        //"The colour of the car is: Blue"
+        //CarColour car3 = new CarColour()  //Does not work. Interfaces can't be instantiated
         CarColour car3 = new CarEx4("Ford");
         car3.colour("Blue");
     }
