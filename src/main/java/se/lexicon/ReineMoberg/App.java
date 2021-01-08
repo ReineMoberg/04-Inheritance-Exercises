@@ -2,6 +2,8 @@ package se.lexicon.ReineMoberg;
 
 import se.lexicon.ReineMoberg.model.*;
 
+import java.util.Arrays;
+
 /**
  * Hello world!
  *
@@ -21,7 +23,46 @@ public class App
         mc1.drive();
         truck1.drive();*/
 
+
         //Exercise 2
+        //Setup
+        ChildBook.childBooks[0] = new ChildBook();
+        ChildBook.childBooks[0].setAuthor("Markus Lutteman");
+        ChildBook.childBooks[0].setCategory("Biography");
+        ChildBook.childBooks[0].setTitle("El Choco");
+        ChildBook.childBooks[0].setYear(2007);
+        ChildBook.childBooks[0].setPages(395);
+        ChildBook.childBooks[1] = new ChildBook(297);
+        ChildBook.childBooks[1].setAuthor("William Gibson");
+        ChildBook.childBooks[1].setCategory("Sci-fi");
+        ChildBook.childBooks[1].setTitle("Neuromancer");
+        ChildBook.childBooks[1].setYear(2007);
+        TeenageBook.teenageBooks[0] = new TeenageBook(305);
+        TeenageBook.teenageBooks[0].setAuthor("Douglas Coupland");
+        TeenageBook.teenageBooks[0].setCategory("Novel");
+        TeenageBook.teenageBooks[0].setTitle("Generation X");
+        TeenageBook.teenageBooks[0].setYear(1991);
+        TeenageBook.teenageBooks[1] = new TeenageBook();
+        TeenageBook.teenageBooks[1].setAuthor("Kody Scott");
+        TeenageBook.teenageBooks[1].setCategory("Biography");
+        TeenageBook.teenageBooks[1].setTitle("Monster");
+        TeenageBook.teenageBooks[1].setYear(1993);
+        TeenageBook.teenageBooks[1].setPages(258);
+        //Prints arrays directly in two different ways
+        Arrays.stream(ChildBook.childBooks).forEach(System.out::println);
+        System.out.println(Arrays.toString(TeenageBook.teenageBooks));
+        //Prints arrays using get.....Books methods.
+        //In this case a class instance is needed to access book arrays
+        ChildBook tempObjectChildBook = new ChildBook();
+        Arrays.stream(tempObjectChildBook.getChildBooks()).forEach(System.out::println);
+        TeenageBook tempObjectTeenageBook = new TeenageBook();
+        System.out.println(Arrays.toString(tempObjectTeenageBook.getTeenageBooks()));
+        //Search for a book title in teenage book department.
+        //In this case a class instance is needed to access book array
+        TeenageBook tempObjectTeenageBook2 = new TeenageBook();
+        System.out.println((tempObjectTeenageBook2.searchTeenageBook("Generation X")));
+        System.out.println((tempObjectTeenageBook2.searchTeenageBook("Java for dummies")));
+
 
 
         //Exercise 3
