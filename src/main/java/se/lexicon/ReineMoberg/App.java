@@ -23,6 +23,7 @@ public class App
 
         //Exercise 2
 
+
         //Exercise 3
         /*IceCream iceCream = new IceCream();
         iceCream.description();
@@ -33,7 +34,7 @@ public class App
 
         //Exercise 4
 
-        //Prints "This is Volvo"
+        /*//Prints "This is Volvo"
         CarBase car1 = new CarBase("Volvo");
         //car1.colour("Brown")      //Does not work. CarBase is parent class
 
@@ -41,16 +42,20 @@ public class App
         //"The colour of the car is: White"
         //"This is default message"
         //"This is static method"
+        //"This is method in Class but not in Interface"
         CarEx4 car2 = new CarEx4("Saab");
         car2.colour("White");
         car2.defaultMethod();
         //car2.staticMethod();   //Does not work. Can't call interface static method with object name
         CarColour.staticMethod();
+        car2.methodNotInInterface();
 
         //Prints "This is Ford"
         //"The colour of the car is: Blue"
         //CarColour car3 = new CarColour()  //Does not work. Interfaces can't be instantiated
         CarColour car3 = new CarEx4("Ford");
         car3.colour("Blue");
+        //car3.methodNotInInterface();  //Does not work without type casting*/
+
     }
 }
